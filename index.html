@@ -1136,7 +1136,7 @@
         <h4 class="font-bold text-lg text-slate-900 dark:text-white">Authenticate as Owner</h4>
         <p class="text-xs text-slate-500">Enter your administrator access key to manage payments, limits, and pricing.</p>
         <div class="max-w-xs mx-auto space-y-2">
-          <input type="password" id="admin-password-input" placeholder="Enter Admin Password (default: ankit@2026)" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-xs text-center font-mono">
+          <input type="password" id="admin-password-input" placeholder="Enter Admin Password" class="w-full px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-xs text-center font-mono">
           <button id="admin-login-btn" class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-semibold">Login</button>
           <div id="admin-auth-error" class="hidden text-xs text-rose-500 font-medium">Invalid credentials.</div>
         </div>
@@ -3151,7 +3151,7 @@ Thank you!`);
 
     document.getElementById('admin-login-btn')?.addEventListener('click', () => {
       const pass = document.getElementById('admin-password-input').value.trim();
-      if (pass === 'ankit@2026' || pass === 'admin') {
+      if (pass === 'Ankit@2010' || pass === 'Ankit@1972') {
         document.getElementById('admin-login-view').classList.add('hidden');
         document.getElementById('admin-console-view').classList.remove('hidden');
         renderAdminConsole();
